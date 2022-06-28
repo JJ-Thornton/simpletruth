@@ -6,19 +6,9 @@
 }
 
 /* seasonal image stuff */
-.seasonal-image {
-    margin: -22em 0 0 80em;
-}
-
 img {
     content: url(../seasons/spring.png)
 }
-
-.current-season {
-    width: 400px;
-    height: 300px;
-}
-
 
 /* everything else */
 * {

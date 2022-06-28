@@ -1,3 +1,13 @@
+@keyframes swoosh {
+  0% {
+    background-color:hsla(0, 92%, 44%, 0.438);
+  }
+
+  100% {
+    background-color: hsla(0, 0%, 0%, 0.61);
+  }
+}
+
 body {
   background-image: linear-gradient(
       360deg,
@@ -17,21 +27,21 @@ body {
 }
 
 /*setting layouts for content and misc. for mission statements*/
-.flex {
-  display: flex;
-  flex-direction: row;
-  gap: 5em;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  margin: 0 auto;
+  margin: 4em auto;
 }
 
 .card {
   background-color: hsla(0, 92%, 44%, 0.438);
-  padding: 1em;
-  margin: 8em 0 0 0;
+  padding: 2em;
+  margin: 2em auto;
   border-radius: 10px;
-  width: 350px;
-  height: 100%;
+  width: 300px;
+  height: 420px;
+  animation: swoosh 6s infinite alternate 6s;
 }
 
 .card-hero {
@@ -43,8 +53,12 @@ body {
 .card-content {
   color: hsl(0, 0%, 100%);
   font-size: 1.5em;
-  margin: 2em 0 0 0;
+  margin: .75em 0 0 .5em;
   text-align: center;
+}
+
+.core-content {
+  padding: .35em;
 }
 
 
@@ -68,7 +82,7 @@ body {
   }
 
   /*setting layouts for content and misc. for mission statements*/
-  .flex {
+  .grid {
     display: flex;
     flex-direction: column;
     gap: 5em;
