@@ -1,0 +1,81 @@
+body {
+  background-color: hsl(60, 100%, 50%);
+  font-size: 12px;
+  font-family: 'quicksandregular';
+}
+
+
+/*sizing and placement*/
+
+.content {
+  color: hsl(176, 46%, 46%);
+}
+
+.agape {
+  width: 80%;
+  text-align: center;
+  font-size: 160%;
+  font-weight: bold;
+  margin: 3em auto;
+  line-height: 2.5em;
+}
+
+.picture-container {
+  text-align: center;
+}
+
+.picture {
+  height: 60%;
+}
+
+.prayer {
+  text-align: center;
+  font-size: 1.85em;
+  font-weight: bolder;
+  margin-top: 1em;
+  line-height: 2em;
+}
+
+.copyright {
+  font-size: 2em;
+  color:hsl(176, 46%, 46%);
+  padding: 0.5em;
+}
+
+.prayer-A {
+  font-size: 2em;
+  color: hsl(123, 100%, 34%);
+}
+
+
+/* Mobile Style */
+@media screen and (max-width: 500px) {
+  .agape {
+    width: 95%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 2em;
+    padding: 0 0 0 .25em;
+    line-height: 2.5em;
+  }
+  
+  .prayer {
+    color:hsl(176, 46%, 46%);
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+    padding: 0;
+    margin-top: 1em;
+    line-height: 2em;
+  }
+
+  .prayer-A {
+    font-size: .75em;
+  }
+  
+  .copyright {
+    margin-top: 2em;
+  }
+
+}

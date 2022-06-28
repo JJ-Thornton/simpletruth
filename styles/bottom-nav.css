@@ -1,0 +1,94 @@
+/* layout, fonts, and general size */
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+      url('fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* container */
+.bottom-nav {
+    width: 95%;
+    margin: 8em auto;
+    background-color: white;
+    height: 10em;
+    text-align: center;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+/* flex */
+.bottom-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    margin: 2em 0 0 .25em;
+    font-size: 1.75em;
+    font-weight: 600;
+}
+
+.bottom1,
+.bottom2,
+.bottom3:hover,
+.bottom4:hover {
+    color: hsl(0, 92%, 44%);
+    border-top: 2px solid hsl(0, 0%, 0%);
+    border-bottom: none;
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+
+.bottom1:hover,
+.bottom2:hover,
+.bottom3,
+.bottom4 {
+    color:hsl(0, 92%, 44%);
+    border-top: none;
+    padding-top: 0;
+    border-bottom: 2px solid hsl(120, 100%, 37%);
+    padding-bottom: 10px;
+}
+
+.gallery,
+.announcements,
+.international:hover,
+.calender:hover {
+    color:hsl(120, 100%, 37%);
+}
+
+.gallery:hover,
+.announcements:hover,
+.international,
+.calender {
+    color:hsl(0, 0%, 0%);
+}
+
+@media screen and (max-width: 500px) {
+    
+    .bottom-nav {
+        width: 95%;
+        margin: 8em auto;
+        background-color: white;
+        height: 45em;
+        text-align: center;
+        padding: 1em;
+        border-radius: 15px;
+    }
+    
+    .bottom-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+        margin: 2em 0 0 .25em;
+        font-size: 1.75em;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,143 @@
+/* layout, fonts, and general size */
+@font-face {
+  font-family: 'quicksandregular';
+  src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+    url('fonts/quicksand-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@keyframes expand {
+  0% {
+    border-radius: 50%;
+  }
+
+  100% {
+    border-radius: 5em;
+  }
+}
+
+@keyframes collapse {
+  0% {
+    border-radius: 5em;
+  }
+
+  100% {
+    border-radius: 50%;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(225, 100%, 4%);
+  font-size: 12px;
+  font-family: 'quicksandregular';
+  color: hsl(0, 0%, 100%);
+}
+
+
+/* Address and Meeting Information */
+.address-container {
+  width: 80%;
+  margin: 1em auto;
+}
+
+.multi-line-address {
+  font-size: 4em;
+  text-align: center;
+}
+
+.service {
+  font-size: 3.25em;
+  margin: 1em 0 0 0;
+}
+
+.ministry {
+  text-align: center;
+  margin: .5em 12.5em 0 0;
+}
+
+.kids {
+  font-size: 3em;
+  padding: 1em 0 0 0;
+}
+
+/* Staff Photo Sizing */
+.staff-photo {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  transition: 300ms ease-in-out;
+  animation: collapse .5s ease-in-out;
+}
+
+.staff-photo:hover,
+.staff-photo:focus {
+  transition: 300ms ease-in-out;
+  animation: expand 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/* Staff Grid */
+.staff-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 5em;
+  margin: 5em 0 0 0;
+}
+
+.staff-1 {
+  font-size: 3em;
+}
+
+.staff-2 {
+  font-size: 2em;
+}
+
+.phones {
+  color: hsl(60, 100%, 50%);
+}
+
+.phones:hover,
+.phones:focus {
+  color: hsl(120, 100%, 37%);
+}
+
+.email {
+  color: hsl(120, 100%, 37%);
+  font-size: 2.5em;
+}
+
+.email:hover,
+.email:focus {
+  color: hsl(0, 92%, 44%);
+}
+
+
+
+
+/*Copyright*/
+.copyright {
+  font-family: 'quicksandregular';
+  font-size: 2em;
+  color: hsl(0, 0%, 100%);
+  margin: 1em 0 0 0;
+  padding: 0.5em;
+}
+
+@media screen and (max-width: 500px) {
+  .staff-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    gap: 7em;
+    margin: 5em 0 0 0;
+  }
+}

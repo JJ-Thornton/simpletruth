@@ -1,0 +1,33 @@
+:root {
+    --summer: #C197FF;
+    --winter: #C1FCF5;
+    --fall: #b3792e;
+    --spring: #a8f373;
+}
+
+/* seasonal image stuff */
+.seasonal-image {
+    margin: -22em 0 0 80em;
+}
+
+img {
+    content: url(../seasons/winter.png)
+}
+
+.current-season {
+    width: 400px;
+    height: 300px;
+}
+
+
+/* everything else */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--winter);
+    font-size: 12px;
+    font-family: 'quicksandregular';
+}

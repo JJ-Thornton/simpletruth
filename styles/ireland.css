@@ -1,0 +1,11 @@
+ body {
+  background-image: linear-gradient(
+        90deg,
+        hsl(120, 62%, 33%),
+        hsl(0, 0%, 95%), 
+        hsl(24, 100%, 50%)
+  );
+  font-size: 12px;
+  font-family: 'quicksandregular';
+} 
+

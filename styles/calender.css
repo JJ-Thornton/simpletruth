@@ -1,0 +1,47 @@
+.calender-month {
+    width: 35.5em;
+    padding: 2em;
+    margin: 4em 0 0 18em;
+}
+
+.month {
+    color: hsl(0, 0%, 100%);
+    font-size: 15em;
+    border-bottom: 10px solid hsl(0, 0%, 100%);
+}
+
+.calender-container {
+    margin: 5em 0 0 1em;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: right;
+    row-gap: 2.5em;
+    column-gap: 1em;
+}
+
+.calender-days {
+    width: 220px;
+    height: 220px;
+    border: 2px solid hsl(0, 0%, 100%);
+}
+
+.day {
+    font-size: 1.75em;
+    padding: 5px;
+}
+
+/* calender content */
+.content-list {
+    font-size: 1.15em;
+}
+
+.content {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.copyright {
+    font-size: 2em;
+    color:hsl(0, 0%, 100%);
+    padding: 0.5em;
+}

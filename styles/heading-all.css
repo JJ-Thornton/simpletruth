@@ -1,0 +1,191 @@
+/* layout, fonts, and general size */
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+      url('fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+/*Simple Truth Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 0%);
+    overflow-x: hidden;
+}
+::-webkit-scrollbar-thumb {
+    background-color:hsl(0, 0%, 100%);
+    height: 20px;
+    width: 15px;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+}
+  
+/*Header Section */
+.container {
+    background-color: hsl(193, 100%, 85%);
+    height: 8em;
+    width: 100%;
+}
+  
+.main-name { 
+    margin: .1em 0 0 1.4em;
+    padding: 0.75em;
+    font-size: 2.5em;
+}
+  
+.navLI {
+    display: flex;
+    margin: -6em 0 0 52.5%;
+    padding: 0.5em;
+}
+  
+.navList1,
+.navList2,
+.navList3,
+.navList4,
+.navList5,
+.navList6 {
+    font-size: 1.5em;
+    font-weight: 700;
+    list-style: none;
+    padding: 0.8em;
+}
+
+  
+.red:hover,
+.red:focus,
+#mission {
+    padding-bottom: 10px;
+    border-bottom: 5px solid hsl(0, 92%, 44%);
+    color: hsl(0, 92%, 44%);
+}
+
+.green:hover, 
+.green:focus, 
+#donation {
+    padding-bottom: 10px;
+    border-bottom: 5px solid hsl(120, 100%, 37%);
+    color: hsl(120, 100%, 37%);
+}
+
+.yellow:hover, 
+.yellow:focus, 
+#prayer {
+    padding-bottom: 10px;
+    border-bottom: 5px solid hsl(60, 100%, 55%);
+    color: hsl(60, 100%, 55%);
+}
+
+.black:hover, 
+.black:focus, 
+#home {
+    padding-bottom: 10px;
+    border-bottom: 5px solid hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 0%);
+}
+
+.white:hover, 
+.white:focus, 
+#contact {
+    padding-bottom: 10px;
+    border-bottom: 5px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+}
+
+.navHover:focus {
+    outline: none;
+}
+  
+a {
+    text-decoration: none;
+    color: hsl(224, 97%, 26%);
+}
+
+
+/* Mobile Style */
+@media screen and (max-width: 500px) {
+    /* layout adjustments */
+    .container {
+      background: hsl(193, 100%, 85%);
+      width: 100%;
+      height: 12em;
+    }
+    
+    .main-name { 
+      margin: 0 0 0 1em;
+      padding: 0.75em;
+      font-size: 2.5em;
+    }
+    
+    .navLI {
+      display: flex;
+      margin: -2em 0 0 -1.25em;
+      padding: 0.75em;
+    }
+    
+    .navList1,
+    .navList2,
+    .navList3,
+    .navList4,
+    .navList5,
+    .navList6 {
+      font-size: 1em;
+      font-weight: 700;
+      list-style: none;
+      padding: 0.8em;
+    }
+
+    .red:hover,
+    .red:focus,
+    #mission {
+        padding-bottom: 10px;
+        border-bottom: 0;
+        color: hsl(0, 92%, 44%);
+    }
+
+    .green:hover, 
+    .green:focus, 
+    #donation {
+        padding-bottom: 10px;
+        border-bottom: 0;
+        color: hsl(120, 100%, 37%);
+    }
+
+    .yellow:hover, 
+    .yellow:focus, 
+    #prayer {
+        padding-bottom: 10px;
+        border-bottom: 0;
+        color: hsl(60, 100%, 55%);
+    }
+
+    .black:hover, 
+    .black:focus, 
+    #home {
+        padding-bottom: 10px;
+        border-bottom: 0;
+        color: hsl(0, 0%, 0%);
+    }
+
+    .white:hover, 
+    .white:focus, 
+    #contact {
+        padding-bottom: 10px;
+        border-bottom: 0;
+        color: hsl(0, 0%, 100%);
+    }
+  
+    a {
+      text-decoration: none;
+      color: hsl(224, 97%, 26%);
+    }
+}
