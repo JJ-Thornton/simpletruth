@@ -1,3 +1,12 @@
+.seasonal-image {
+    margin: -22em 0 0 80em;
+}
+
+.current-season {
+    width: 400px;
+    height: 300px;
+}
+
 .calender-month {
     width: 35.5em;
     padding: 2em;
@@ -44,4 +53,42 @@
     font-size: 2em;
     color:hsl(0, 0%, 100%);
     padding: 0.5em;
+}
+
+@media screen and (max-width: 500px) {
+    .seasonal-image {
+        margin: 0 0 0 9em;
+    }
+    
+    .current-season {
+        width: 200px;
+        height: 150px;
+    }
+    
+    .calender-month {
+        width: 19.5em;
+        padding: 2em;
+        margin: 4em 0 0 6.25em;
+    }
+
+    .month {
+        color: hsl(0, 0%, 100%);
+        font-size: 8em;
+        border-bottom: 10px solid hsl(0, 0%, 100%);
+    }
+
+    .calender-container {
+        margin: 5em 0 0 1em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: right;
+        row-gap: 2.5em;
+        column-gap: 1em;
+    }
+    
+    .calender-days {
+        width: 180px;
+        height: 100%;
+        border: 2px solid hsl(0, 0%, 100%);
+    }
 }
