@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(180, 100%, 50%);
     font-size: 12px;
     font-family: 'quicksandregular';
 }
@@ -30,16 +30,16 @@ body {
     width: 80%;
     margin: 0 auto;
     padding: .5em;
-    color:hsl(120, 100%, 50%);
+    color:hsl(330, 100%, 50%);
     font-size: 2em;
 }
 
-a {
-    color:#007185;
+.pink-link {
+    color:hsl(310, 24%, 41%);
 }
 
 .bottom-nav {
-    background-color: hsl(60, 100%, 55%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 .copyright {
@@ -66,7 +66,7 @@ a {
         width: 80%;
         margin: 0 auto;
         padding: .5em;
-        color:hsl(120, 100%, 50%);
+        color:hsl(263, 100%, 50%);
         font-size: 2.5em;
     }
 }

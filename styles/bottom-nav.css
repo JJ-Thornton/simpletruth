@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: row;
     gap: 5em;
-    margin: 2em 0 0 .25em;
+    margin: 2em 0 0 6em;
     font-size: 1.75em;
     font-weight: 600;
 }
@@ -39,10 +39,6 @@
 .bottom3:hover,
 .bottom4:hover {
     color: hsl(0, 92%, 44%);
-    border-top: 2px solid hsl(0, 0%, 0%);
-    border-bottom: none;
-    padding-bottom: 0;
-    padding-top: 10px;
 }
 
 .bottom1:hover,
@@ -50,10 +46,6 @@
 .bottom3,
 .bottom4 {
     color:hsl(0, 92%, 44%);
-    border-top: none;
-    padding-top: 0;
-    border-bottom: 2px solid hsl(120, 100%, 37%);
-    padding-bottom: 10px;
 }
 
 .gallery,
