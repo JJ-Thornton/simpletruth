@@ -1,6 +1,7 @@
 
 .slideshowBackground {
     height: 50em;
+    width: 100%;
 }
   
 /* Slideshow Container And Prev/Next Buttons */
@@ -8,7 +9,7 @@
 .slideshow-container {
     height: 100%;
     position: relative;
-    margin: auto;
+    margin: 2em auto;
     
 }
   
@@ -33,13 +34,13 @@
 .next {
     cursor: pointer;
     position: absolute;
-    top: 15em;
+    top: 6em;
     width: auto;
     margin-top: -22px;
     padding: 16px;
     color: hsl(0, 0%, 0%);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 4em;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
