@@ -1,9 +1,5 @@
 body {
-  background-image: linear-gradient(
-    205deg,
-    #00bd00,
-    #000000
-  );
+  background-color:#025502;
   font-size: 12px;
   font-family: 'quicksandregular';
 }

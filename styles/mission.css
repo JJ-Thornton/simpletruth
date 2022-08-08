@@ -35,19 +35,23 @@ body {
 }
 
 .card {
-  background-color: hsla(0, 92%, 44%, 0.438);
+  background-color: hsl(0, 0%, 0%, 0.61);
   padding: 2em;
   margin: 2em auto;
   border-radius: 10px;
   width: 300px;
   height: 420px;
-  animation: swoosh 6s infinite alternate 6s;
+  /* animation: swoosh 6s infinite alternate 6s; */
 }
 
 .card-hero {
   color:hsl(0, 0%, 100%);
   font-size: 2em;
   text-align: center;
+}
+
+.left {
+  text-align: left;
 }
 
 .card-content {
