@@ -7,7 +7,6 @@
   font-style: normal;
 }
 
-
 @keyframes expand {
   0% {
     border-radius: 50%;
@@ -28,19 +27,17 @@
   }
 }
 
-
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: hsl(225, 100%, 4%);
+  background-color: #c42323;
   font-size: 12px;
   font-family: 'quicksandregular';
   color: hsl(0, 0%, 100%);
 }
-
 
 /* Address and Meeting Information */
 .address-container {
@@ -61,13 +58,12 @@ body {
 
 .ministry {
   text-align: center;
-  margin: .5em 12.5em 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .kids {
   font-size: 3em;
-  padding: 1em 0 0 0;
-  text-align: center;
+  padding: 1rem 0 0 0;
 }
 
 /* Staff Photo Sizing */
@@ -76,7 +72,7 @@ body {
   width: 250px;
   border-radius: 50%;
   transition: 300ms ease-in-out;
-  animation: collapse .5s ease-in-out;
+  animation: collapse 0.5s ease-in-out;
 }
 
 .staff-photo:hover,
@@ -104,26 +100,26 @@ body {
 }
 
 .phones {
-  color: hsl(60, 100%, 50%);
+  color: hsl(0, 0%, 0%);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .phones:hover,
 .phones:focus {
-  color: hsl(120, 100%, 37%);
+  color: hsl(0, 0%, 100%);
 }
 
 .email {
-  color: hsl(120, 100%, 37%);
-  font-size: 2.5em;
+  color: hsl(0, 0%, 0%);
+  font-size: 1.65rem;
+  font-weight: 600;
 }
 
 .email:hover,
 .email:focus {
-  color: hsl(0, 92%, 44%);
+  color: hsl(0, 0%, 99%);
 }
-
-
-
 
 /*Copyright*/
 .copyright {
